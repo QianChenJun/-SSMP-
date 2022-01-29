@@ -1,0 +1,19 @@
+# 在该文件夹配置的属性会覆盖资源路径下的配置文件
+server:
+  port: 8081
+
+#spring:
+#  datasource:
+#    druid:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      url: jdbc:mysql://localhost:3306/ssm_db?serverTimezone=UTC
+#      username: root
+#      password: 333
+#
+#mybatis-plus:
+#  global-config:
+#    db-config:
+#      table-prefix: tbl_
+#      id-type: auto
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
