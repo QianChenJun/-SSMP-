@@ -24,14 +24,14 @@ public class BookController {
 
     @PostMapping
     public Result save(@RequestBody Book book) throws IOException {
-        if (book.getName().equals("123")) throw new IOException();
         Boolean flag = bookService.save(book);
         return new Result(flag, flag ? "添加成功^_^" : "添加失败-_-!");
     }
 
     @PutMapping
     public Result update(@RequestBody Book book) {
-        return new Result(bookService.update(book));
+        Boolean flag = bookService.update(book);
+        return new Result(flag, flag ? "修改成功^_^" : "修改失败-_-!");
     }
 
     @DeleteMapping("{id}")

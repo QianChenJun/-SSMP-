@@ -3,17 +3,11 @@ package com.teng;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.Arrays;
-
-
 @SpringBootApplication
 public class Application {
 
     public static void main(String[] args) {
-        // String[] arg = new String[1];
-        // arg[0] = "--server.port=8082";
-        // 可以在启动boot程序时断开读取外部临时配置对应的入口, 也就是去掉读取外部参数的形参
-        SpringApplication.run(Application.class);
+        SpringApplication.run(Application.class, args);
     }
 
 }
